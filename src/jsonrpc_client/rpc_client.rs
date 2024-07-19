@@ -72,7 +72,7 @@ impl RpcClient {
     /// # Examples
     ///
     /// ```
-    /// # use jito_block_engine_json_rpc_client::jsonrpc_client::rpc_client::RpcClient;
+    /// # use jito_rpc_client::jsonrpc_client::rpc_client::RpcClient;
     /// let url = "http://localhost:8899".to_string();
     /// let client = RpcClient::new(url);
     /// ```
@@ -95,7 +95,7 @@ impl RpcClient {
     /// # Examples
     ///
     /// # use solana_sdk::commitment_config::CommitmentConfig;
-    /// # use jito_block_engine_json_rpc_client::jsonrpc_client::rpc_client::RpcClient;
+    /// # use jito_rpc_client::jsonrpc_client::rpc_client::RpcClient;
     /// let url = "http://localhost:8899".to_string();
     /// let commitment_config = CommitmentConfig::processed();
     /// let client = RpcClient::new_with_commitment(url, commitment_config);
@@ -120,7 +120,7 @@ impl RpcClient {
     ///
     /// ```
     /// # use std::time::Duration;
-    /// # use jito_block_engine_json_rpc_client::jsonrpc_client::rpc_client::RpcClient;
+    /// # use jito_rpc_client::jsonrpc_client::rpc_client::RpcClient;
     /// let url = "http://localhost::8899".to_string();
     /// let timeout = Duration::from_secs(1);
     /// let client = RpcClient::new_with_timeout(url, timeout);
@@ -164,7 +164,7 @@ impl RpcClient {
     ///
     /// Example excerpt can be as below
     ///
-    /// use jito_block_engine_json_rpc_client::jsonrpc_client::rpc_client::RpcClient;
+    /// use jito_rpc_client::jsonrpc_client::rpc_client::RpcClient;
     /// use solana_program::hash::Hash;
     /// use solana_sdk::{pubkey::Pubkey, signer::keypair::Keypair};
     ///
@@ -243,7 +243,7 @@ impl RpcClient {
     ///
     /// Example excerpt can be as below
     ///
-    /// use jito_block_engine_json_rpc_client::jsonrpc_client::rpc_client::RpcClient;
+    /// use jito_rpc_client::jsonrpc_client::rpc_client::RpcClient;
     ///
     /// let SERVER_URL = "http://localhost:8899";
     /// let bundle_id = "bundle_id".to_owned();
